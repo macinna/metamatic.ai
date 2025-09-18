@@ -23,3 +23,13 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
+## Debugging (VS Code)
+
+- Install dependencies and start debugging in Chrome with Vite and Amplify using the Run and Debug view: select `Debug: Vite + Amplify (Chrome)`.
+- Alternatively, run servers manually:
+	- Terminal 1: `npx ampx sandbox`
+	- Terminal 2: `pnpm run dev`
+	- Then launch `Debug: Chrome (Vite)` or `Debug: Edge (Vite)` from the Run and Debug view.
+- Set breakpoints in `.ts`/`.tsx` files under `src/`; Vite provides source maps automatically in dev mode.
+- To attach to a Node process (e.g., local Amplify functions), use `Attach: Node process` and pick the process.
